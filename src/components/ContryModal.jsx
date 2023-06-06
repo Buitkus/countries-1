@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CloseButton from 'react-bootstrap/CloseButton';
-
 const ContryModal = ({ setModalIsOpenToFalse, oneCountry }) => {
 
     // for (let folders in oneCountry) {
@@ -23,7 +22,7 @@ const ContryModal = ({ setModalIsOpenToFalse, oneCountry }) => {
     // }
 
     return (
-        <div >
+        <div>
             {
                 oneCountry !== undefined && oneCountry.length !== 0 ?
                     oneCountry.map((country, index) => (
@@ -36,7 +35,7 @@ const ContryModal = ({ setModalIsOpenToFalse, oneCountry }) => {
                                     <Card.Text>Capital: {country.capital}</Card.Text>
                                     <Card.Text>Population: {country.population}</Card.Text>
                                     <Card.Text>Area: {country.area}</Card.Text>
-                                    <Card.Text>Currencies: {country.currencies.EUR.name}</Card.Text>
+                                    <Card.Text>Currencies:</Card.Text>
                                     <Card.Text>Languages: {items.languages[0]}</Card.Text>
                                     <Card.Text>Borders: {country.borders}</Card.Text>
                                 </Card.Body>
